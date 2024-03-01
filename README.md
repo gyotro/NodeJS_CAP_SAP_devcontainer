@@ -1,1 +1,1 @@
-Example of SAP CAP NodeJS Application, running on devcontainer
+Example of SAP CAP NodeJS Application, running on a devcontainer

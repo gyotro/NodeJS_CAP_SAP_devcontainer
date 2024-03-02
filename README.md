@@ -1,6 +1,6 @@
-Example/Tutorial of SAP CAP Framework on NodeJS, running on devcontainer
+<h1>Example/Tutorial of SAP CAP Framework on NodeJS, running on devcontainer</h1>
 
-useful commands:
+<h3>useful commands:</h3>
 
 - cds init <project_name> --add nodejs/java --> create a project with nodejs or java
 - cds env --> show env variables
@@ -10,3 +10,6 @@ useful commands:
 - cds add lint --> add lint to the project
 - cds lint . --> verify the project
 - DEBUG=all cds lint . --> same as cds lint . but showing all the steps
+- CDS_CONFIG='<variable to be changed>' --> changes the value of that env variable
+- cds env get <variable>
+- cds env ls folders --> list all directories under folder env 

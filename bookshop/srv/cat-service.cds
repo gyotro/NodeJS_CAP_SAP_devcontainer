@@ -12,3 +12,7 @@ service CatalogService {
  service say {
     function hello(to:String) returns String;
 }
+
+ service goodbye {
+    function bye(to:String) returns String;
+}

@@ -17,7 +17,7 @@
       ]
     }
   },
-  "postCreateCommand": "npm install -g @sap/cds-dk",
+  "postCreateCommand": "npm install -g @sap/cds-dk typescript ts-node",
   "forwardPorts": [
     4004
   ],

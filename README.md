@@ -13,3 +13,8 @@
 - CDS_CONFIG='<variable to be changed>' --> changes the value of that env variable
 - cds env get <variable>
 - cds env ls folders --> list all directories under folder env 
+- if you want to add typescript capabilities:
+    - mandatory: npm i -g typescript ts-node
+    - optional: in the project directory npm i -D typescript @types/express @types/node @cap-js/cds-typer
+    - crating tsconfig file npx tsc --init
+    - use import { Request } from '@sap/cds' to import sap/cds types for TS

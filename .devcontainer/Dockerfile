@@ -6,5 +6,7 @@ RUN apt-get update && apt-get -y install --no-install-recommends curl git sqlite
 
 # Install SAP CAP SDK globally
 USER node
-RUN npm install -g @sap/cds-dk
+RUN npm install -g @sap/cds-dk typescript ts-node
+# in the project npm i -D typescript @types/express @types/node
+
 WORKDIR /home/node

@@ -6,6 +6,8 @@ connection.properties
 default-*.json
 .cdsrc-private.json
 gen/
+.vscode/
+bookshop/.vscode/
 node_modules/
 target/
 

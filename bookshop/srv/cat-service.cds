@@ -1,6 +1,6 @@
 using my.bookshop as my from '../db/data-model';
 
-service CatalogService {
+service CatalogService @(path: '/services') {
     @readonly entity Books as projection on my.Books;
 }
 
@@ -9,7 +9,7 @@ service CatalogService {
     function hello(to:String) returns String;
 } */
 
- service say {
+ service say @(path: '/ciao') {
     function hello(to:String) returns String;
 }
 

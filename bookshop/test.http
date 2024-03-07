@@ -1,0 +1,25 @@
+### 
+# @name BooksQuery
+GET http://localhost:4004/odata/v4/catalog/Books
+
+###
+GET http://localhost:4004/odata/v4/catalog/Books/$count
+
+###
+@book_id = {{ BooksQuery.response.body.value[0].ID }}
+GET http://localhost:4004/odata/v4/catalog/Books({{book_id}})
+
+###
+@book_id = {{ BooksQuery.response.body.value[0].ID }}
+GET http://localhost:4004/odata/v4/catalog/Books/{{book_id}}
+
+###
+@book_id = {{ BooksQuery.response.body.value[0].ID }}
+GET http://localhost:4004/odata/v4/catalog/Books?$filter=ID eq {{book_id}}
+
+###
+POST http://localhost:4004/odata/v4/catalog/Books
+Content-Type: application/json
+
+{"title":"prova create con UUID v2 ", "stock":18 }
+

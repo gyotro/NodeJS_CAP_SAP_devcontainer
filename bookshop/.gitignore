@@ -7,10 +7,9 @@ default-*.json
 .cdsrc-private.json
 gen/
 .vscode/
-bookshop/.vscode/
+../.vscode/
 node_modules/
 target/
-
 # Web IDE, App Studio
 .che/
 .gen/

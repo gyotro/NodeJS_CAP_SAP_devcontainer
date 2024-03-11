@@ -20,4 +20,11 @@
   - use import { Request } from '@sap/cds' to import sap/cds types for TS
 - visit website http://bestofcapjs.org for more info about cap-js packages
 - cds compile: offers many options, for instance: cds compile --to edmx ./srv/cat-service.cds -s all, or cds compile --to sql ./srv/cat-service.cds -s all, to view the SQL models for the CDS services.
-- 
+- in order to add more functionalities on types, in your project's root, execute: cds add typer
+- compile to persistent SQLITE. Add this code into package.json: "cds": { "requires": {
+   "db": {
+      "kind": "sqlite",
+      "credentials": { "url": "db.sqlite" } 
+   }
+}}
+then deploy with: cds deploy

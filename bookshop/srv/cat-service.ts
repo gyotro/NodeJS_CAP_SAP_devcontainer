@@ -1,4 +1,4 @@
-import { Request } from '@sap/cds'
+import { Request, Service } from '@sap/cds'
 import os from 'os'
 
 class say {

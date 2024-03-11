@@ -23,5 +23,13 @@
     "watch": "cds watch",
     "typew": "cds-ts watch",
     "typerun": "cds-ts run"
-  }
+  },
+  "imports": {
+    "#cds-models/*": "./@cds-models/*/index.js"
+  },"cds": { "requires": {
+    "db": {
+       "kind": "sqlite",
+       "credentials": { "url": "db.sqlite" } 
+    }
+ }}
 }

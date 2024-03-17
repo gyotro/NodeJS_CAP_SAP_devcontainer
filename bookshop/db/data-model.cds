@@ -1,5 +1,7 @@
 namespace my.bookshop;
-using { cuid, managed } from '@sap/cds/common'; // importing cuid aspect 
+using from '@sap/cds-common-content';
+using { cuid, managed, Country } from '@sap/cds/common'; // importing cuid aspect 
+
 
 
 entity Books : cuid, managed {
@@ -7,9 +9,11 @@ entity Books : cuid, managed {
 //  key ID : Int32;
   title  : String;
   stock  : Integer;
+  author : Association to Authors // one to one association
 }
 
 entity Authors : cuid, managed {
 //  key ID : Int32;
   name  : String;
+  countryOfBirth: Country
 }

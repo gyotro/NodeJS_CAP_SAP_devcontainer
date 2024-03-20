@@ -7,11 +7,12 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "^7",
+    "@sap/cds-common-content": "^1.4.0",
     "express": "^4"
   },
   "devDependencies": {
     "@cap-js/cds-typer": "^0.16.0",
-    "@cap-js/sqlite": "^1",
+    "@cap-js/sqlite": "^1.5.1",
     "@sap/eslint-plugin-cds": "^2.6.5",
     "@types/express": "^4.17.21",
     "@types/node": "^20.11.24",
@@ -29,7 +30,7 @@
   },"cds": { "requires": {
     "db": {
        "kind": "sqlite",
-       "credentials": { "url": "db.sqlite" } 
+       "credentials": { "url": "bookshop.sqlite" } 
     }
  }}
 }

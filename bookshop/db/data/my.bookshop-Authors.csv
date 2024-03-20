@@ -1,4 +1,4 @@
-ID,name
-1,ciccio
-2,pluto
-3,paperina
+ID,name,countryOfBirth_code
+ad6fb24a-9f53-47a3-9473-62a12a331077,ciccio,IT
+e01a6d1a-59ea-4842-abeb-8436c5b06899,pluto,ES
+482e4636-6a16-4245-9c9c-917a952e2e66,paperina,CH
